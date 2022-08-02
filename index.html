@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h3>Random Password Generator <span class="emoji">&#128274;</span></h3>
+        
+        <div class="options-container">
+            <div class="length-container">
+                <label for="passwordLength">Length Needed: </label>
+                <input type="number" name="passwordLength" id="passwordLength" min="6" max="26">
+            </div>
+            
+            
+            <p>Characters to Include: </p>
+            <div class="option-checkboxes">
+                <input class="checkbox" type="checkbox" name="lowercase" id="lowercase">
+                <label class="chbx-lbl" for="lowercase" style="font-weight:bold">abcd</label>
+
+                <input class="checkbox" type="checkbox" name="uppercase" id="uppercase">
+                <label class="chbx-lbl" for="uppercase" style="font-weight:bold">ABCD</label>
+
+                <input class="checkbox" type="checkbox" name="numbers" id="numbers">
+                <label class="chbx-lbl" for="uppercase" style="font-weight:bold">1234</label>
+
+                <input class="checkbox" type="checkbox" name="symbols" id="symbols">
+                <label class="chbx-lbl" for="uppercase" style="font-weight:bold">!@#$</label>    
+            </div>    
+        </div>
+
+        <div class="refresh-container">
+            <input type="button" class="refresh" id="genBtn" value="Generate &#128170; Passwords">
+        
+        <div class="input-container">
+            <div class="passwords">
+                <p id="passwordOne"> </p>
+            </div>
+
+            <div class="passwords">
+                <p id="passwordTwo">Password</p>
+            </div>
+
+            <div class="passwords">
+                <p id="passwordThree">Password</p>
+            </div>
+
+            <div class="passwords">
+                <p id="passwordFour">Password</p>
+                
+            </div>
+        </div> 
+    </div>
+    </div>
+</body>
+</html>
